@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #1a1b21;
+    --color-white: #FFFFFF;
+    --color-offWhite: #f5f5f5;
+    --color-skyBlue:#5093e2;
+    --color-offBlue:#d1d5db;
+    --color-brown:#f3bf99;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    background-color: #23252c;
+    width: 550px;
+    padding: 44px 0;
+  
+    .main {
+      margin: 0 auto;
+      width: 317px;
+      background: var(--primary-color);
+      border-radius: 25px;
+    }
+  }
+  
+  .info-container {
+    img {
+      width: 317px;
+      height: 317px;
+      object-fit: cover;
+      object-position: 0 10%;
+      border-top-right-radius: 25px;
+      border-top-left-radius: 25px;
+    }
+  
+    h2 {
+      margin-top: 21px;
+      color: var(--color-white);
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12.8px;
+      line-height: 15px;
+      text-align: center;
+      color: var(--color-brown);
+      margin-top: 6px;
+    }
+    h6 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10.24px;
+      line-height: 150%;
+      text-align: center;
+      color: var(--color-offWhite);
+      margin-top: 9px;
+    }
+    .button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      button {
+        margin: 0 1em;
+        margin-top: 15px;
+        width: 115px;
+        height: 34px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  button.mail {
+    border: 1px solid  var(--color-offBlue);
+    background-color: var(--color-white);
+    &:hover{
+      background-color: var(--color-offBlue);
+      color: var(--color-white)
+    }
+  }
+  
+  button.linkedin {
+    background:  var(--color-skyBlue);
+    border: 1px solid var(--color-skyBlue);
+    color : var(--color-white);
+    &:hover{
+      background:  var(--color-white);
+      border: 1px solid var(--color-skyBlue);
+      color : var(--color-skyBlue);
+    }
+  }
+  
+  .about,
+  .interest {
+    width: 317px;
+    background: var(--primary-color);
+    color: var(--color-white);
+    margin: 0 auto;
+    width: 247px;
+  
+    h3 {
+      padding-top: 15px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10.24px;
+      line-height: 150%;
+      color: #dcdcdc;
+    }
+  }
+  
+  .footer {
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #161619;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  
+    img {
+      margin: 0 1em;
+      cursor: pointer;
+    }
+  }
